@@ -23,8 +23,30 @@ public class Aluno
     private string? celular;
     public string? Celular {
         get { return celular; }
-        set { email = StringHelper.VerificaTelefone(value) ? value : null; }
+        set { celular = StringHelper.VerificaTelefone(value) ? value : null; }
     }
     public SexoEnum Sexo { get; set; }
 
+    public string? Cep { get; set; }
+    public string? Logradouro { get; set; }
+    public string? Complemento { get; set; }
+    public string? Numero { get; set; }
+    public string? Bairro { get; set; }
+    public string? Localidade { get; set; }
+    public string? Uf { get; set; }
+
+    public async Task BuscaCep()
+    {
+        if (!string.IsNullOrEmpty(Cep))
+        {
+            var cepDto = await ApiHelper.GetCep(Cep);
+            if (cepDto != null)
+            {
+                Logradouro = cepDto.Logradouro;
+                Bairro = cepDto.Bairro;
+                Localidade = cepDto.Localidade;
+                Uf = cepDto.Uf;
+            }
+        }
+    }
 }
