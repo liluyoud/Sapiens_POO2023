@@ -11,7 +11,8 @@ public static class ApiHelper
     public static async Task<CepDto?> GetCep(string cep)
     {
         cep = cep.GetNumeros();
-        var cepDto = await http.GetFromJsonAsync<CepDto>($"https://viacep.com.br/ws/{cep}/json");
+        var cepDto = await http.GetFromJsonAsync<CepDto>
+            ($"https://viacep.com.br/ws/{cep}/json");
         return cepDto;
     }
 }

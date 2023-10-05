@@ -1,5 +1,6 @@
 ﻿namespace Sapiens.Shared.Entities;
 
-public class Aluno : Pessoa
+public class Egresso : Pessoa
 {
+ 
 }

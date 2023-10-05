@@ -1,9 +1,8 @@
 ﻿using Sapiens.Shared.Entities;
 using Sapiens.Shared.Enums;
-using Sapiens.Shared.Helpers;
 
 Console.WriteLine("Sistema Sapiens");
-Console.WriteLine("--------------------------------");
+Console.WriteLine("ALUNO --------------------------------");
 
 var aluno = new Aluno();
 aluno.Nome = "Liluyoud Cury de Lacerda";
@@ -33,3 +32,31 @@ Console.WriteLine($"Cidade:       {aluno.Localidade}");
 Console.WriteLine($"UF:           {aluno.Uf}");
 
 
+Console.WriteLine("PROFESSOR --------------------------------");
+
+var professor = new Professor();
+professor.Nome = "Liluyoud Cury de Lacerda";
+professor.DataNascimento = DateTime.Parse("25/07/1973");
+professor.Cpf = "175.504.618-99";
+professor.Email = "lilo@mail.com";
+professor.Celular = "(69) 98114-1732";
+professor.Sexo = SexoEnum.Masculino;
+professor.Cep = "76820-888";
+await professor.BuscaCep();
+
+Console.WriteLine($"Nome:         {professor.Nome}");
+Console.WriteLine($"Primero Nome: {professor.PrimeiroNome}");
+Console.WriteLine($"Sobrenome:    {professor.UltimoNome}");
+Console.WriteLine($"Nascimento:   {professor.DataNascimento?.ToString("dd/MM/yyyy")}");
+Console.WriteLine($"Idade:        {professor.Idade}");
+Console.WriteLine($"Email:        {professor.Email}");
+Console.WriteLine($"Celular:      {professor.Celular}");
+if (professor.CpfValido)
+    Console.WriteLine($"Cpf Válido:   {professor.Cpf}");
+else
+    Console.WriteLine($"Cpf Inválido: {professor.Cpf}");
+Console.WriteLine($"Cep:          {professor.Cep}");
+Console.WriteLine($"Logradouro:   {professor.Logradouro}");
+Console.WriteLine($"Bairro:       {professor.Bairro}");
+Console.WriteLine($"Cidade:       {professor.Localidade}");
+Console.WriteLine($"UF:           {professor.Uf}");
