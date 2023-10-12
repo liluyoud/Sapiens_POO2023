@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sapiens.Shared.Entities.Pessoa">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <Members>
+      <Field Name="celular" Hidden="true" />
+      <Property Name="CpfValido" Hidden="true" />
+      <Field Name="email" Hidden="true" />
+      <Property Name="Idade" Hidden="true" />
+      <Property Name="PrimeiroNome" Hidden="true" />
+      <Property Name="UltimoNome" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAEAIAACQAACIkgAAAAAAAAAIAAIAAAAAgAAmTAAA=</HashCode>
+      <FileName>Entities\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sapiens.Shared.Entities.Aluno">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <InheritanceLine Type="Sapiens.Shared.Entities.Pessoa" ManuallyRouted="true">
+      <Path>
+        <Point X="1.75" Y="2.25" />
+        <Point X="1.75" Y="1.669" />
+        <Point X="3.5" Y="1.669" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Aluno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sapiens.Shared.Entities.Coordenador">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Coordenador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sapiens.Shared.Entities.Egresso">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Egresso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sapiens.Shared.Entities.Funcionario">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Funcionario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sapiens.Shared.Entities.Professor">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Professor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

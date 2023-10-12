@@ -1,6 +1,43 @@
 ﻿using Sapiens.Shared.Entities;
 using Sapiens.Shared.Enums;
 
+var p = new Pessoa();
+var f = new Funcionario();
+
+p.Nome = "Lilo";
+f.Nome = "João";
+f.Salario = 1320.32m;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Console.WriteLine("Sistema Sapiens");
 Console.WriteLine("ALUNO --------------------------------");
 

@@ -1,5 +1,6 @@
 ﻿namespace Sapiens.Shared.Entities;
 
-public class Coordenador : Pessoa
+public class Coordenador : Professor
 {
+    public decimal Gratificacao { get; set; }
 }

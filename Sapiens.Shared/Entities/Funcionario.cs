@@ -2,4 +2,6 @@
 
 public class Funcionario : Pessoa
 {
+    public decimal Salario {  get; set; }
+
 }
